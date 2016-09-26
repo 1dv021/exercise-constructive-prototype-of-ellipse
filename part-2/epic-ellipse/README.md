@@ -39,5 +39,5 @@ Genom att köra testerna som kommer med övningsuppgiften kan du undersöka om k
 
 ## <i class="fa fa-flask"></i> Lösningsförslag
 <ul class="fa-ul fa-border exercise-info">
-  <li><i class="fa-li fa fa-github"></i><a href="https://github.com/1dv021/exercise-solution-proposals/tree/master/part-2/lego-constructor">https://github.com/1dv021/exercise-solution-proposals/tree/master/part-2/epic-ellipse</a></li>
+  <li><i class="fa-li fa fa-github"></i><a href="https://github.com/1dv021/exercise-solution-proposals/tree/master/part-2/epic-ellipse">https://github.com/1dv021/exercise-solution-proposals/tree/master/part-2/epic-ellipse</a></li>
 </ul>

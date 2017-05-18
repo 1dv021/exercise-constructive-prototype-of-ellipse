@@ -14,7 +14,7 @@
  * @returns {string} The greeting 'Hello, World!'.
  */
 let sayHello = function () {
-  // TODO: Write your code here!
+  return 'Hello, World!'
 }
 
 exports.sayHello = sayHello

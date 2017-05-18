@@ -5,7 +5,7 @@
 
 > __VIKTIGT!__ Innan du börjar arbeta med övningsuppgiften är det viktigt att du följer guiden [Att komma igång med en övningsuppgift](https://coursepress.gitbooks.io/1dv021/content/guider/att-komma-igang-med-en-ovningsuppgift/) för att lägga till övningsuppgiftens repo till ditt repo för övningsuppgifter.
 
-Hämta hem övningsuppgiftens repo. Öppna filen `hello.js` och komplettera funktionen `sayHello`, så att funktionen returnerar strängen `Hello, World!`.
+Hämta hem övningsuppgiftens repo och lägg till en .gitignore-fil. Öppna filen `hello.js` och komplettera funktionen `sayHello`, så att funktionen returnerar strängen `Hello, World!`.
 
 ### Spara på GitHub
 

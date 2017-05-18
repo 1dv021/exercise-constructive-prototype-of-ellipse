@@ -126,6 +126,3 @@ Funktioner, metoder, etc. som _kan_ komma till användning beroende hur du välj
 - [return](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return)
 - [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 
-## Lösningsförslag
-
-- https://github.com/1dv021/exercise-solution-proposals/tree/master/part-1/hello-world

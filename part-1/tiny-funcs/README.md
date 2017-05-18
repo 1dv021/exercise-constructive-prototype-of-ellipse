@@ -70,6 +70,3 @@ Funktioner, metoder, etc. som _kan_ komma till användning beroende hur du välj
 - [String.charAt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charAt)
 - [Number.toString](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toString)
 
-## Lösningsförslag
-
-- https://github.com/1dv021/exercise-solution-proposals/tree/master/part-1/tiny-funcs

@@ -12,8 +12,8 @@ const myFuncs = require('../src/my-funcs')
 const expect = require('chai').expect
 
 describe('Test add()', () => {
-  it('add(); should return 24', done => {
-    expect(myFuncs.add()).to.eql(24)
+  it('add(); should return 42', done => {
+    expect(myFuncs.add()).to.eql(42)
     done()
   })
 })
@@ -26,8 +26,8 @@ describe('Test concat()', () => {
 })
 
 describe('Test round()', () => {
-  it('round(); should return 25', done => {
-    expect(myFuncs.round()).to.eql(25)
+  it('round(); should return 42', done => {
+    expect(myFuncs.round()).to.eql(42)
     done()
   })
 })
@@ -58,11 +58,11 @@ describe(`Test greetings()`, () => {
   it('greetings(); should return the right message', done => {
     let hour = new Date().getHours()
     let result = myFuncs.greetings()
-    if (hour >= 8 && hour <= 12) {
+    if (hour >= 8 && hour < 12) {
       expect(result).to.eql('Good morning!')
-    } else if (hour > 12 && hour <= 18) {
+    } else if (hour >= 12 && hour < 18) {
       expect(result).to.eql('Good afternoon!')
-    } else if (hour > 18 && hour <= 24) {
+    } else if (hour >= 18 && hour < 24) {
       expect(result).to.eql('Good evening!')
     } else {
       expect(result).to.eql('Good night!')

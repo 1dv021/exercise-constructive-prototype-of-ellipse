@@ -15,10 +15,10 @@
  * @returns {Number}
  */
 exports.add = function () {
-  let a = 12
-  let b = '12'
+  let a = 21
+  let b = '21'
 
-  // TODO: Write your code here.
+  b = Number.parseInt(b)
 
   return a + b
 }
@@ -33,7 +33,11 @@ exports.concat = function () {
   let time = 9
   let weeks = 'weeks.'
 
-  // TODO: Write your code here.
+  return message + ' ' + time + ' ' + weeks
+
+  // ALTERNATIVE SOLUTION
+  // Using template literals. Note the back-ticks!
+  // return `${message} ${time} ${weeks}`
 }
 
 /**
@@ -43,9 +47,9 @@ exports.concat = function () {
  */
 exports.round = function () {
   let firstNumber = 12.24
-  let secondNumber = 12.27
+  let secondNumber = 29.27
 
-  // TODO: Write your code here.
+  return Math.round(firstNumber + secondNumber)
 }
 
 /**
@@ -55,8 +59,38 @@ exports.round = function () {
  * @returns {String} A string with comma separated odd values.
  */
 exports.getOddNumbers = function (max) {
+  let result = ''
 
-  // TODO: Write your code here.
+  for (let i = 1; i <= max; i += 2) {
+      // Add a comma (if not the first number)...
+    if (result.length > 0) {
+      result += ', '
+    }
+    // ...and the number.
+    result += i
+  }
+
+  return result
+
+  // ALTERNATIVE SOLUTION
+  // Using template literal and the method slice to remove the last two characters.
+  // let result = ''
+
+  // for (let i = 1; i <= max; i += 2) {
+  //   result += `${i}, `
+  // }
+
+  // return result.slice(0, -2)
+
+  // ALTERNATIVE SOLUTION
+  // Using an array and the method join.
+  // let arr = []
+
+  // for (let i = 1; i < max; i += 2) {
+  //   arr.push(i)
+  // }
+
+  // return arr.join(', ')
 }
 
 /**
@@ -71,8 +105,19 @@ exports.getOddNumbers = function (max) {
  */
 exports.greetings = function () {
   let hour = new Date().getHours()
+  let message = 'Good '
 
-  // TODO: Write your code here.
+  if (hour >= 8 && hour < 12) {
+    message += 'morning!'
+  } else if (hour >= 12 && hour < 18) {
+    message += 'afternoon!'
+  } else if (hour >= 18 && hour < 24) {
+    message += 'evening!'
+  } else {
+    message += 'night!'
+  }
+
+  return message
 }
 
 /**
@@ -82,8 +127,22 @@ exports.greetings = function () {
  * @returns {string} - A new string with all matches of a hyphen replaced by a space.
  */
 exports.replaceHyphensFor = function (str) {
+  let result = ''
 
-  // TODO: Write your code here.
+  for (let i = 0; i < str.length; i++) {
+    let char = str.charAt(i)
+    if (char === '-') {
+      result += ' '
+    } else {
+      result += char
+    }
+  }
+
+  return result
+
+  // ALTERNATIVE SOLUTION
+  // ...without a for loop though.
+  // return str.replace('-', ' ')
 }
 
 /**
@@ -93,8 +152,21 @@ exports.replaceHyphensFor = function (str) {
  * @returns {string} - A new string with all matches of a hyphen replaced by a space.
  */
 exports.replaceHyphensWhile = function (str) {
+  let result = ''
+  let i = 0
 
-  // TODO: Write your code here.
+  while (i < str.length) {
+    let char = str.charAt(i)
+    if (char === '-') {
+      result += ' '
+    } else {
+      result += char
+    }
+
+    i++
+  }
+
+  return result
 }
 
 /**
@@ -103,6 +175,28 @@ exports.replaceHyphensWhile = function (str) {
  * @returns {string} - A string '11-12-13, 21-22-23, 31-32-33, 41-42-43, 51-52-53'.
  */
 exports.getNumberSequence = function () {
+  const PAIR_MAX_VALUE = 5
+  const NUMBER_MAX_VALUE = 3
 
-  // TODO: Write your code here.
+  let result = ''
+
+  for (let pair = 1; pair <= PAIR_MAX_VALUE; pair++) {
+    for (let number = 1; number <= NUMBER_MAX_VALUE; number++) {
+      // Result must be a string.
+      result += pair.toString() + number.toString()
+      // ALTERNATIVE SOLUTION
+      // result += `${pair}${number}`
+
+      // No '-' after the last.
+      if (number !== NUMBER_MAX_VALUE) {
+        result += '-'
+      }
+    }
+
+    if (pair !== PAIR_MAX_VALUE) {
+      result += ', '
+    }
+  }
+
+  return result
 }

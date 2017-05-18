@@ -26,7 +26,3 @@ Funktioner, metoder, etc. som *kan* komma till användning beroende hur du välj
 - [return](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return)
 - [let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
 - [console.log](https://nodejs.org/api/console.html#console_console_log_data)
-
-##  Lösningsförslag
-
-- https://github.com/1dv021/exercise-solution-proposals/tree/master/part-1/simple-addition

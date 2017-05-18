@@ -7,7 +7,7 @@
 
 ><i class="fa fa-warning"></i> __VIKTIGT!__ Innan du börjar arbeta med övningsuppgiften är det viktigt att du följer guiden [Att komma igång med en övningsuppgift](../../guider/att-komma-igang-med-en-ovningsuppgift/README.md) för att lägga till övningsuppgiftens repo till ditt repo för övningsuppgifter.
 
-Hämta hem övningsuppgiftens repo. I filerna `app.js` och `calc.js` saknas det kod. Kommentaren `// TODO: Write your code here.` indikerar var det saknas kod. Sammanhanget TODO-kommentaren står i ger vilken kod som saknas.
+Hämta hem övningsuppgiftens repo och lägg till en .gitignore-fil. I filerna `app.js` och `calc.js` saknas det kod. Kommentaren `// TODO: Write your code here.` indikerar var det saknas kod. Sammanhanget TODO-kommentaren står i ger vilken kod som saknas.
 
 ### <i class="fa fa-file-code-o"></i> calc.js
 Komplettera funktion addNumbers så att funktionen returnerar summan av de två variabler som är deklarerade lokalt i funktionen.

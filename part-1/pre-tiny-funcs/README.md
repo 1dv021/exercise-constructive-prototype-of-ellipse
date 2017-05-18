@@ -63,9 +63,10 @@ Funktionen ska returnera värdet `true` om heltalet som skickas till funktionen 
 Funktionen ska returnera värdet `true` om heltalet som skickas till funktionen är jämt; annars `false`.
 
 ## Tips
+
 Genom att köra testerna som kommer med övningsuppgiften kan du undersöka om koden du skrivit löst uppgiften (i alla fall enligt testerna...).
 
-Funktioner, metoder, etc. som *kan* komma till användning beroende hur du väljer att lösa uppgiften.
+Funktioner, metoder, etc. som _kan_ komma till användning beroende hur du väljer att lösa uppgiften.
 
 - [Math.ceil](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/ceil)
 - [Math.round](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round)
@@ -74,6 +75,3 @@ Funktioner, metoder, etc. som *kan* komma till användning beroende hur du välj
 - [String.charAt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charAt)
 - [String.indexOf](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf)
 - [%, restoperator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Remainder)
-
-##  Lösningsförslag
-- https://github.com/1dv021/exercise-solution-proposals/tree/master/part-1/pre-tiny-funcs

@@ -18,7 +18,7 @@
 exports.roundUp = function (number) {
   let roundedNumber
 
-  // TODO: Write your code here.
+  roundedNumber = Math.ceil(number)
 
   return roundedNumber
 }
@@ -30,11 +30,7 @@ exports.roundUp = function (number) {
  * @returns {Number} The smallest integer less than or equal to the given number.
  */
 exports.roundDown = function (number) {
-  let roundedNumber
-
-  // TODO: Write your code here.
-
-  return roundedNumber
+  return Math.floor(number)
 }
 
 /**
@@ -44,11 +40,7 @@ exports.roundDown = function (number) {
  * @returns {Number} The value of the given number rounded to the nearest integer.
  */
 exports.round = function (number) {
-  let roundedNumber
-
-  // TODO: Write your code here.
-
-  return roundedNumber
+  return Math.round(number)
 }
 
 /**
@@ -58,9 +50,7 @@ exports.round = function (number) {
  * @returns {Number} Returns the the length of the sequence of characters of the given string.
  */
 exports.getStringLength = function (str) {
-
-  // TODO: Write your code here.
-
+  return str.length
 }
 
 /**
@@ -70,9 +60,7 @@ exports.getStringLength = function (str) {
  * @returns {String} A string representing the first character.
  */
 exports.getFirstLetter = function (str) {
-
-  // TODO: Write your code here.
-
+  return str.charAt(0)
 }
 
 /**
@@ -82,9 +70,7 @@ exports.getFirstLetter = function (str) {
  * @returns {Number} The index of the first occurrence of the question mark character; -1 if not found.
  */
 exports.getIndexOfQuestionMark = function (str) {
-
-  // TODO: Write your code here.
-
+  return str.indexOf('?')
 }
 
 /**
@@ -95,9 +81,7 @@ exports.getIndexOfQuestionMark = function (str) {
  * @returns {Boolean} true if the value of the str1 parameter is the same as the value of the str2 parameter; otherwise, false.
  */
 exports.isEqual = function (str1, str2) {
-
-  // TODO: Write your code here.
-
+  return str1 === str2
 }
 
 /**
@@ -107,9 +91,7 @@ exports.isEqual = function (str1, str2) {
  * @returns {Boolean} true if number is odd; otherwise, false.
  */
 exports.isOdd = function (number) {
-
-  // TODO: Write your code here.
-
+  return number % 2 === 1
 }
 
 /**
@@ -119,7 +101,5 @@ exports.isOdd = function (number) {
  * @returns {Boolean} true if number is even; otherwise, false.
  */
 exports.isEven = function (number) {
-
-  // TODO: Write your code here.
-
+  return number % 2 === 0
 }

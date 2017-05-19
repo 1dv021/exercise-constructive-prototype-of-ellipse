@@ -13,7 +13,7 @@
  *
  * @returns {string} The greeting 'Hello, World!'.
  */
-let sayHello = function () {
+function sayHello () {
   return 'Hello, World!'
 }
 

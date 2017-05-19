@@ -9,7 +9,7 @@
 'use strict'
 
 /**
- * Returns the classical phrase 'Hello, World!'.
+ * Returns the classic phrase 'Hello, World!'.
  *
  * @returns {string} The greeting 'Hello, World!'.
  */

@@ -15,7 +15,13 @@
  * @returns {String}
  */
 function createRightTriangle (base) {
-  // TODO: Write your code here.
+  let triangle = ''
+
+  for (let row = '#'; row.length <= base; row += '#') {
+    triangle += `${row}\n`
+  }
+
+  return triangle
 }
 
-module.exports = createRightTriangle
+exports.createRightTriangle = createRightTriangle

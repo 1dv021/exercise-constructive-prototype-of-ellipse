@@ -43,7 +43,3 @@ Funktioner, metoder, etc. som _kan_ komma till användning beroende hur du välj
 - [string.length](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length)
 - [+=, tilldelningsoperator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Assignment_operators)
 - [<=, operatorn mindre än eller lika med](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Comparison_operators)
-
-## Lösningsförslag
-
-- https://github.com/1dv021/exercise-solution-proposals/tree/master/part-1/right-triangle

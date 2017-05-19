@@ -13,9 +13,11 @@
  *
  * @returns {Number} The number 42.
  */
-exports.addNumbers = function () {
+function addNumbers () {
   let firstNumber = 12
   let secondNumber = 30
 
   return firstNumber + secondNumber
 }
+
+exports.addNumbers = addNumbers

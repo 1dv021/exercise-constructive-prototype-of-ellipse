@@ -7,6 +7,8 @@
 
 Hämta hem övningsuppgiftens repo och lägg till en .gitignore-fil. I filerna `app.js` och `calc.js` saknas det kod. Kommentaren `// TODO: Write your code here.` indikerar var det saknas kod. Sammanhanget TODO-kommentaren står i ger vilken kod som saknas.
 
+## Filer
+
 ### calc.js
 
 Komplettera funktionen `addNumbers` så att den returnerar summan av de två variabler som är deklarerade lokalt i funktionen.
@@ -15,7 +17,7 @@ Komplettera funktionen `addNumbers` så att den returnerar summan av de två var
 
 Du ska komplettera med kod som anropar funktionen `addNumbers` och sparar det funktionen returnerar i en lokal variabel du skapar. Variabelns värde ska sedan presenteras i konsolfönstret.
 
-##  Tips
+## Tips
 
 Genom att köra testet som kommer med övningsuppgiften kan du undersöka om koden du skrivit löst uppgiften (i alla fall enligt testet...).
 

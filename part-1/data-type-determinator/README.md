@@ -20,6 +20,8 @@ Hämta hem övningsuppgiftens repo och lägg till en .gitignore-fil. Komplettera
 
 I filerna `app.js` och `determinator.js` saknas det kod. Kommentaren `// TODO: Write your code here.` indikerar var det saknas kod.
 
+## Filer
+
 ### determinator.js
 
 Komplettera funktionen `tellType` så att den returnerar en sträng som beskriver datatypen argumentet är av som skickats till funktionen.
@@ -56,4 +58,4 @@ Funktioner, metoder, etc. som _kan_ komma till användning beroende hur du välj
 
 ## Lösningsförslag
 
-- https://github.com/1dv021/exercise-solution-proposals/tree/master/part-1/data-type-determinator
+- [https://github.com/1dv021/exercise-solution-proposals/tree/master/part-1/data-type-determinator](https://github.com/1dv021/exercise-solution-proposals/tree/master/part-1/data-type-determinator)

@@ -5,7 +5,7 @@
 
 > __VIKTIGT!__ Innan du börjar arbeta med övningsuppgiften är det viktigt att du följer guiden [Att komma igång med en övningsuppgift](https://coursepress.gitbooks.io/1dv021/content/guider/att-komma-igang-med-en-ovningsuppgift/) för att lägga till övningsuppgiftens repo till ditt repo för övningsuppgifter.
 
-Hämta hem övningsuppgiftens repo och lägg till en .gitignore-fil. Öppna filen `src\my-funcs.js` och komplettera de nio funktionerna enligt specifikationerna. Du behöver inte tänka på att implementera någon form av felhantering.
+Hämta hem övningsuppgiftens repo och lägg till en .gitignore-fil. Öppna filen `src\mf.js` och komplettera de nio funktionerna enligt specifikationerna. Du behöver inte tänka på att implementera någon form av felhantering.
 
 ## Funktioner
 
@@ -48,7 +48,6 @@ Funktionen ska returnera indexet som det första frågetecknet har som parameter
 
 - Är parameterns värde `'What's a programmer? An organism that turns caffiene and pizza into software.'` ska värdet `19` returneras.
 - Är parameterns värde `'In c<>de we trust.'` ska värdet `-1` returneras.
-
 
 ### isEqual
 

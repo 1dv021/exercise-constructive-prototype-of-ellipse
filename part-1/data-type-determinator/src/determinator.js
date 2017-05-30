@@ -12,7 +12,7 @@
 /**
  * Returns a string indicating the type of the data sent to the function.
  *
- * @param {any} data The data whose type is to be returned.
+ * @param {*} data The data whose type is to be returned.
  * @returns {string} The data type of the parameter.
  */
 function tellType (data) {

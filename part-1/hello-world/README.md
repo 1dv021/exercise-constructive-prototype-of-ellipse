@@ -7,6 +7,8 @@
 
 Hämta hem övningsuppgiftens repo och lägg till en .gitignore-fil. Öppna filen `hello.js` och komplettera funktionen `sayHello`, så att funktionen returnerar strängen `Hello, World!`.
 
+## ...och glöm inte!
+
 ### Spara på GitHub
 
 Gjort ändringar i koden och sparat dem på GitHub? Kanske behöver du skapa en .gitignore-fil med inställningar för Node.js, utvecklingsverktyg och operativsystem? Glöm inte att följa guiden [Arbetsgång med en övningsuppgift](https://coursepress.gitbooks.io/1dv021/content/guider/arbetsgang-med-en-ovningsuppgift/). Använd `git commit` och `git push` regelbundet!

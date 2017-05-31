@@ -67,7 +67,7 @@ describe('Tests for createElements', () => {
     { tagName: 'h1', innerHTML: 'This is a headline' },
     { tagName: 'p', innerHTML: 'This is a paragraph' },
     { tagName: 'h2', innerHTML: 'This is a sub headline' },
-    { tsgName: 'p', innerHTML: 'This is a paragraph' }
+    { tagName: 'p', innerHTML: 'This is a paragraph' }
   ]
   const CORRECT = '<h1>This is a headline</h1><p>This is a paragraph</p>' +
     '<h2>This is a sub headline</h2><p>This is a paragraph</p>'

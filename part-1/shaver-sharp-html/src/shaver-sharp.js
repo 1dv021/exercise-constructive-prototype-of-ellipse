@@ -16,7 +16,7 @@
  * @returns {string} Returns a starting tag as a string.
  */
 function createBeginTag (tagName) {
-  // TODO: Write this code first
+  return `<${tagName}>`
 }
 
 /**
@@ -26,7 +26,7 @@ function createBeginTag (tagName) {
  * @returns {string} Returns a closing tag as a string.
  */
 function createEndTag (tagName) {
-  // TODO: Write this code second
+  return `</${tagName}>`
 }
 
 /**
@@ -37,7 +37,16 @@ function createEndTag (tagName) {
  * @returns {string} Returns an element as a string.
  */
 function createElement (tagName, innerHTML = '') {
-  // TODO: Write this code third
+  let result = createBeginTag(tagName)
+
+  if (innerHTML) {
+    result += `${innerHTML}${createEndTag(tagName)}`
+  } else {
+      // Extract everything but the ending > and make the element self-closing.
+    result = result.substring(0, result.length - 1) + ' />'
+  }
+
+  return result
 }
 
 /**
@@ -48,7 +57,19 @@ function createElement (tagName, innerHTML = '') {
  * @returns {string} Returns specified elements as a string.
  */
 function createElements (elementData) {
-  // TODO: Write this code last
+  let result = ''
+
+  elementData.forEach(function (current) {
+    result += createElement(current.tagName, current.innerHTML)
+  })
+
+  // // ALTERNATIV LÖSNING
+  // // Använder en så kallad "arrow function".
+  // elementData.forEach(current => {
+  //   result += createElement(current.tagName, current.innerHTML)
+  // })
+
+  return result
 }
 
 // Exports

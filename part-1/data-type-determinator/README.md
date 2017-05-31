@@ -35,11 +35,11 @@ Du ska komplettera med kod som anropar funktionen `tellType` och presentera det 
 ```js
 const determinator = require('./src/determinator');
 
-console.log(determinator.tellType('Hasta la vista, baby.')); // outputs 'You sent me a string.'
-console.log(determinator.tellType(true)); // outputs 'You sent me a boolean.'
-console.log(determinator.tellType({})); // outputs 'You sent me an object.'
-console.log(determinator.tellType([])); // outputs 'You sent me an array.'
-console.log(determinator.tellType(function(){})); // outputs 'You sent me a function.'
+console.log(determinator.tellType('Hasta la vista, baby.')) // outputs 'You sent me a string.'
+console.log(determinator.tellType(true)) // outputs 'You sent me a boolean.'
+console.log(determinator.tellType({})) // outputs 'You sent me an object.'
+console.log(determinator.tellType([])) // outputs 'You sent me an array.'
+console.log(determinator.tellType(function () {})) // outputs 'You sent me a function.'
 ...
 ```
 

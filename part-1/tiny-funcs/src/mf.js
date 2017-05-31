@@ -12,9 +12,9 @@
 /**
  * Returns the sum of two local variables.
  *
- * @returns {Number}
+ * @returns {number} The result of an arithmetic operation.
  */
-exports.add = function () {
+function add () {
   let a = 21
   let b = '21'
 
@@ -26,9 +26,9 @@ exports.add = function () {
 /**
  * Returns a string combined of multiple local variables.
  *
- * @returns {String} The string 'I'm going to learn how to program in 9 weeks.'.
+ * @returns {string} The string 'I'm going to learn how to program in 9 weeks.'.
  */
-exports.concat = function () {
+function concat () {
   let message = 'I\'m going to learn how to program in'
   let time = 9
   let weeks = 'weeks.'
@@ -43,9 +43,9 @@ exports.concat = function () {
 /**
  * Returns the sum of two local variables, rounded to the nearest integer.
  *
- * @returns {Number} The sum of two variables rounded to the nearest integer.
+ * @returns {number} The sum of two variables rounded to the nearest integer.
  */
-exports.round = function () {
+function round () {
   let firstNumber = 12.24
   let secondNumber = 29.27
 
@@ -55,10 +55,10 @@ exports.round = function () {
 /**
  * Returns a string with the sequence of odd numbers from one up to the value of the parameter.
  *
- * @param {Number} max An integer greater than zero.
- * @returns {String} A string with comma separated odd values.
+ * @param {number} max An integer greater than zero.
+ * @returns {string} A string with comma separated odd values.
  */
-exports.getOddNumbers = function (max) {
+function getOddNumbers (max) {
   let result = ''
 
   for (let i = 1; i <= max; i += 2) {
@@ -101,9 +101,9 @@ exports.getOddNumbers = function (max) {
  * If hour is between 18 and 24 the message should be "Good evening!".
  * If hour is between 24 and 8 the message should be "Good night!".
  *
- * @returns {String} A greeting according to the time of day.
+ * @returns {string} A greeting according to the time of day.
  */
-exports.greetings = function () {
+function greetings () {
   let hour = new Date().getHours()
   let message = 'Good '
 
@@ -126,7 +126,7 @@ exports.greetings = function () {
  * @param {string} str  The string being searched and replaced on.
  * @returns {string} - A new string with all matches of a hyphen replaced by a space.
  */
-exports.replaceHyphensFor = function (str) {
+function replaceHyphensFor (str) {
   let result = ''
 
   for (let i = 0; i < str.length; i++) {
@@ -151,7 +151,7 @@ exports.replaceHyphensFor = function (str) {
  * @param {string} str  The string being searched and replaced on.
  * @returns {string} - A new string with all matches of a hyphen replaced by a space.
  */
-exports.replaceHyphensWhile = function (str) {
+function replaceHyphensWhile (str) {
   let result = ''
   let i = 0
 
@@ -174,7 +174,7 @@ exports.replaceHyphensWhile = function (str) {
  *
  * @returns {string} - A string '11-12-13, 21-22-23, 31-32-33, 41-42-43, 51-52-53'.
  */
-exports.getNumberSequence = function () {
+function getNumberSequence () {
   const PAIR_MAX_VALUE = 5
   const NUMBER_MAX_VALUE = 3
 
@@ -200,3 +200,12 @@ exports.getNumberSequence = function () {
 
   return result
 }
+
+exports.add = add
+exports.concat = concat
+exports.round = round
+exports.getOddNumbers = getOddNumbers
+exports.greetings = greetings
+exports.replaceHyphensFor = replaceHyphensFor
+exports.replaceHyphensWhile = replaceHyphensWhile
+exports.getNumberSequence = getNumberSequence

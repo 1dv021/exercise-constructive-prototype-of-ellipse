@@ -5,7 +5,7 @@
 
 > __VIKTIGT!__ Innan du börjar arbeta med övningsuppgiften är det viktigt att du följer guiden [Att komma igång med en övningsuppgift](https://coursepress.gitbooks.io/1dv021/content/guider/att-komma-igang-med-en-ovningsuppgift/) för att lägga till övningsuppgiftens repo till ditt repo för övningsuppgifter.
 
-Hämta hem övningsuppgiftens repo och lägg till en .gitignore-fil. Öppna filen `src\my-funcs.js` och komplettera de åtta funktionerna enligt specifikationerna. Du behöver inte tänka på att implementera någon form av felhantering.
+Hämta hem övningsuppgiftens repo och lägg till en .gitignore-fil. Öppna filen `src\mf.js` och komplettera de åtta funktionerna enligt specifikationerna. Du behöver inte tänka på att implementera någon form av felhantering.
 
 __OBS!__ Filen innehåller funktioner med kod. Koden i funktionerna, bortsett från eventuella kommentarer, får under inga omständigheter ändras.
 
@@ -30,7 +30,6 @@ Komplettera funktionen så att den returnerar en sträng med kommaseparerade udd
 - Är parameterns värde `3`ska strängen `1, 3` returneras.
 - Är parameterns värde `10`ska strängen `1, 3, 5, 7, 9` returneras.
 
-
 ### greetings
 
 Komplettera funktion så att olika hälsningsmeddelanden returneras beroende av hur mycket klockan är.
@@ -50,7 +49,6 @@ Komplettera funktionen den returnerar en sträng där alla bindestreck ersatts m
 
 Komplettera funktionen den returnerar en sträng där alla bindestreck ersatts med mellanslag. Använd en `while`-sats för att lösa problemet.
 
-
 ### getNumberSequence
 
 Komplettera funktionen så att den genom att använda två nästlade `for`-satser returnerar en sträng med sekvenserna `'11-12-13, 21-22-23, 31-32-33, 41-42-43, 51-52-53'`.
@@ -69,4 +67,3 @@ Funktioner, metoder, etc. som _kan_ komma till användning beroende hur du välj
 - [String.length](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length)
 - [String.charAt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charAt)
 - [Number.toString](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toString)
-

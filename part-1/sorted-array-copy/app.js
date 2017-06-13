@@ -1,5 +1,5 @@
 /**
- * The starting  point of the application.
+ * The starting point of the application.
  *
  * @author Mats Loock
  * @version 1.1.0
@@ -22,21 +22,21 @@ try {
   console.log('\nOriginal array: ', originalArray)
   console.log('Sorted (descending) array: ', result)
 } catch (e) {
-  console.log(e)
+  console.error(e)
 }
 
 console.log()
 
 try {
   ma.immutableSort() // should throw a TypeError
-  console.error('ma.immutableSort throws no TypeError!')
+  console.log('ma.immutableSort throws no TypeError!')
 } catch (e) {
-  console.log(e)
+  console.error(`An exception caught: ${e.message}`)
 }
 
 try {
   ma.immutableSortDescending() // should throw a TypeError
-  console.error('ma.immutableSortDescending throws no TypeError!')
+  console.log('ma.immutableSortDescending throws no TypeError!')
 } catch (e) {
-  console.log(e)
+  console.error(`An exception caught: ${e.message}`)
 }

@@ -36,14 +36,14 @@ try {
   ma.immutableSort() // should throw a TypeError
   console.error('ma.immutableSort throws no TypeError!')
 } catch (e) {
-  console.log(e)
+  console.log(`An exception caught: ${e.message}`)
 }
 
 try {
   ma.immutableSortDescending() // should throw a TypeError
   console.error('ma.immutableSortDescending throws no TypeError!')
 } catch (e) {
-  console.log(e)
+  console.log(`An exception caught: ${e.message}`)
 }
 ```
 

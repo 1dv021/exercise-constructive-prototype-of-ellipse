@@ -18,7 +18,22 @@
  * @returns {Array} A copy of the source array with an additional number.
  */
 function immutablePushNumber (source, number) {
-  // TODO: Write your code here.
+  let copy
+
+  // Validate the parameter values.
+  if (!Array.isArray(source)) {
+    throw new TypeError('The first argument passed must be an Array.')
+  }
+
+  if (typeof number !== 'number') {
+    throw new TypeError('The second argument passed must be a Number.')
+  }
+
+  // Make a copy of the source array and add the number to the end of the copy.
+  copy = source.slice(0)
+  copy.push(number)
+
+  return copy
 }
 
 exports.immutablePushNumber = immutablePushNumber

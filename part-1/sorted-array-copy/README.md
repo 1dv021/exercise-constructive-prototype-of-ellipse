@@ -27,23 +27,23 @@ try {
   console.log('\nOriginal array: ', originalArray)
   console.log('Sorted (descending) array: ', result)
 } catch (e) {
-  console.log(e)
+  console.error(`An exception caught: ${e.message}`)
 }
 
 console.log()
 
 try {
   ma.immutableSort() // should throw a TypeError
-  console.error('ma.immutableSort throws no TypeError!')
+  console.log('ma.immutableSort throws no TypeError!')
 } catch (e) {
-  console.log(`An exception caught: ${e.message}`)
+  console.error(`An exception caught: ${e.message}`)
 }
 
 try {
   ma.immutableSortDescending() // should throw a TypeError
-  console.error('ma.immutableSortDescending throws no TypeError!')
+  console.log('ma.immutableSortDescending throws no TypeError!')
 } catch (e) {
-  console.log(`An exception caught: ${e.message}`)
+  console.error(`An exception caught: ${e.message}`)
 }
 ```
 

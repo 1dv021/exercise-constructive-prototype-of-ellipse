@@ -13,7 +13,7 @@ const team = require('../src/team')
 const expect = require('chai').expect
 
 describe('team.sortByPoints', () => {
-  const orderedTeams = [
+  const ORDERED_TEAMS = [
     {'name': 'Tottenham Hotspur FC', 'nickname': 'Spurs', 'points': 86},
     {'name': 'Liverpool FC', 'nickname': 'The Reds', 'points': 76},
     {'name': 'Arsenal', 'nickname': 'The Gunners', 'points': 75},
@@ -38,8 +38,7 @@ describe('team.sortByPoints', () => {
 
   it('The source array must be untouched.', done => {
     const original = JSON.parse(JSON.stringify(teams))
-    const result = team.sortByPoints(teams)
-    expect(result).to.an('array')
+    team.sortByPoints(teams)
     expect(teams).to.eql(original)
     done()
   })
@@ -51,7 +50,7 @@ describe('team.sortByPoints', () => {
   })
 
   it('should return a correctly ordered array of team objects.', done => {
-    expect(team.sortByPoints(teams)).to.eql(orderedTeams)
+    expect(team.sortByPoints(teams)).to.eql(ORDERED_TEAMS)
     done()
   })
 })

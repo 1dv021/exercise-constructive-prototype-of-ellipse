@@ -30,9 +30,23 @@ describe('team.sortByPoints', () => {
     done()
   })
 
-  it('should return a reference to the same array the argument refers to.', done => {
+  it('Must NOT return the same Array object the source parameter refers to.', done => {
+    const res = team.sortByPoints(teams)
+    expect(res).to.an('array').and.to.not.eql(teams)
+    done()
+  })
+
+  it('The source array must be untouched.', done => {
+    const original = JSON.parse(JSON.stringify(teams))
     const result = team.sortByPoints(teams)
-    expect(teams).to.equal(result)
+    expect(result).to.an('array')
+    expect(teams).to.eql(original)
+    done()
+  })
+
+  it('should not return a reference to the same array the argument refers to.', done => {
+    const result = team.sortByPoints(teams)
+    expect(teams).not.to.equal(result)
     done()
   })
 

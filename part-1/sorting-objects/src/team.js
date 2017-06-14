@@ -16,7 +16,15 @@
    * @returns {Object[]} An ordered array of team objects.
    */
 function sortByPoints (teams) {
-  // TODO: Write your code here!
+  if (!Array.isArray(teams)) {
+    throw new TypeError('The argument passed must be an array.')
+  }
+
+  return teams.slice(0).sort(function (a, b) {
+    return b.points - a.points
+  })
+
+  // return teams.slice(0).sort((a, b) => b.points - a.points)
 }
 
 exports.sortByPoints = sortByPoints

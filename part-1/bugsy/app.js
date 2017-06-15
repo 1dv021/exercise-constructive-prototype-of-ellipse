@@ -1,17 +1,20 @@
 /**
- * Starting  point of the application.
+ * The starting point of the application.
  *
  * @author Mats Loock
- * @version 1.0.1
+ * @version 1.1.0
  */
 
-'use strict';
+'use strict'
 
-let bugsy = require('./src/bugsy');
+const bugsy = require('./src/bugsy')
 
 try {
-  let result = bugsy.getGangster('AC');
-  console.log(result);
+  let result = bugsy.getGangster('AC')
+  console.log(`AC: ${result}`)
+
+  result = bugsy.getGangster('ÖÖ')
+  console.log(`ÖÖ: ${result}`)
 } catch (e) {
-  console.error('ERROR:' , e.message);
+  console.error('ERROR: ', e.message)
 }

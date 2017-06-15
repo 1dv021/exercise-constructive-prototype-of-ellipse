@@ -1,40 +1,44 @@
-'use strict';
+/**
+ * MostWanted module.
+ *
+ * @module src/mostWanted
+ * @author John Häggerud
+ * @author Mats Loock
+ * @version 1.1.0
+ */
 
-let MostWanted = (function() {
+'use strict'
 
-  return {
+/**
+ * Returns names of dubious persons.
+ *
+ * @returns {Iterable.<string>}
+ */
+function * getNames () {
+  yield 'Bugsy Malone'
+  yield 'Frank Nitti'
+  yield 'Stephanie St. Clare'
+  yield 'Al Capone'
+  yield 'Helen Gills'
+  yield 'Johnny Torrio'
+  yield 'Bonnie Parker'
+}
 
-    /**
-     *
-     */
-    getNames: function*() {
-      yield 'Bugsy Malone';
-      yield 'Frank Nitti';
-      yield 'Stephanie St. Clare';
-      yield 'Al Capone';
-      yield 'Helen Gills';
-      yield 'Johnny Torrio';
-      yield 'Bonnie Parker';
-    },
+/**
+ * Returns the initials of a name.
+ *
+ * @param {string} name The name to get the initials of.
+ * @returns {string}
+ */
+function getInitials (name) {
+  // If it's a non empty string...
+  if ((typeof name === 'string' || name instanceof String) && name.trim()) {
+    // ...split it and concatenate the first character of each word.
+    return name.split(' ').reduce((prev, next) => (prev += next.charAt(0)), '')
+  }
 
-    /**
-     * Returns the initials from a name.
-     *
-     * @param {String} name The name to get the initials from.
-     * @returns {String}
-     */
-    getInitials: function(name) {
-      if (typeof name === 'string' && !name.trim() ||
-          typeof name === 'undefined' ||
-          name === null) {
-        throw new Error('name must be a string that\'s not empty.');
-      }
+  throw new Error(`The argument passed must be a string that's not empty.`)
+}
 
-      return name.split(' ').reduce(function(prev, next) {
-          return prev += next.charAt(0);
-        }, '');
-    }
-  };
-})();
-
-module.exports = MostWanted;
+exports.getNames = getNames
+exports.getInitials = getInitials

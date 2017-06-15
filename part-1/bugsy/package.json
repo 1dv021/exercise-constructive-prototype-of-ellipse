@@ -1,6 +1,6 @@
 {
   "name": "exercise-bugsy",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "app.js",
   "homepage": "http://coursepress.lnu.se/kurs/grundlaggande-programmering/",
   "contributors": [
@@ -32,14 +32,27 @@
   "dependencies": {},
   "devDependencies": {
     "chai": "^3.5.0",
-    "jscs": "^3.0.7",
-    "jshint": "^2.9.3",
-    "mocha": "^3.0.2"
+    "mocha": "^3.3.0",
+    "snazzy": "^7.0.0",
+    "standard": "*"
   },
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "mocha --recursive ./test"
+    "start": "node app.js",
+    "test": "standard | snazzy && mocha --recursive ./test"
+  },
+  "standard": {
+    "globals": [
+      "describe",
+      "context",
+      "before",
+      "beforeEach",
+      "after",
+      "afterEach",
+      "it",
+      "expect"
+    ]
   }
 }

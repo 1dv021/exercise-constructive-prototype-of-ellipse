@@ -77,7 +77,7 @@ describe('Test the filterBettarThanAverage function', () => {
     ]
 
     let result = ma.filterBetterThanAverage(arr)
-    expect(arr).to.not.eql(result)
+    expect(result).to.an('array').and.to.not.eql(arr)
     done()
   })
 
@@ -89,7 +89,8 @@ describe('Test the filterBettarThanAverage function', () => {
       { name: 'Sven', points: 4 }
     ]
     const ORIGINAL = JSON.parse(JSON.stringify(arr))
-    ma.filterBetterThanAverage(arr)
+    let result = ma.filterBetterThanAverage(arr)
+    expect(result).to.an('array')
     expect(arr).to.eql(ORIGINAL)
     done()
   })

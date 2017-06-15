@@ -43,7 +43,3 @@ Funktioner, metoder, etc. som _kan_ komma till användning beroende hur du välj
 - [throw](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw)
 - [Error](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error)
 - [TypeError](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError)
-
-## Lösningsförslag
-
-- [https://github.com/1dv021/exercise-solution-proposals/tree/master/part-1/better-than-average](https://github.com/1dv021/exercise-solution-proposals/tree/master/part-1/better-than-average)

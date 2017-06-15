@@ -14,13 +14,13 @@ Du ska även implementera viss felhantering, innebärande att undantag kastas om
 Visdare så ska funktionen vara en så kallad "_pure function_", d.v.s. vara helt utan sidoeffekter.
 
 ```js
-const ma = require('../src/my-array');
+const ma = require('../src/my-array')
 
 let arr = [
-{name: 'Stina', points: 1},
-{name: 'Erik', points: 2},
-{name: 'Maja', points: 3},
-{name: 'Sven', points: 4}
+  {name: 'Stina', points: 1},
+  {name: 'Erik', points: 2},
+  {name: 'Maja', points: 3},
+  {name: 'Sven', points: 4}
 ]
 
 let result = ma.filterBetterThanAverage(arr)

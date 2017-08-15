@@ -21,7 +21,15 @@ function getSum (source) {
     throw new TypeError('The argument passed must be an array.')
   }
 
-  return source.reduce((prev, curr) => prev + curr, 0)
+  // Important to set a start value and just treat sum as a Number
+  // otherwise we get NaN.
+  return source.reduce(function (sum, value) {
+    return sum + value
+  }, 0) // 0 is the start value for sum
+
+  // ALTERNATIVE SOLUTION
+  // Using an arrow function.
+  // return source.reduce((sum, value) => sum + value, 0)
 }
 
 exports.getSum = getSum

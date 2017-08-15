@@ -7,8 +7,8 @@
 
 'use strict'
 
-var ma = require('./src/my-array')
+const ma = require('./src/my-array')
 
 let result = ma.getSum([1, 2, 3])
 
-console.log(result)
+console.log(`${result} [90m=> [32m6[39m`)

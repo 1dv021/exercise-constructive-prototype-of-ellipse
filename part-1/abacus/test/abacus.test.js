@@ -47,6 +47,11 @@ describe('Test the module with kind values', () => {
     expect(abacus.add(1, -1, -1)).eql(-1)
     done()
   })
+
+  it('Should handle arrays', done => {
+    expect(abacus.add(1, 2, [3, 4], 5, [6, 7])).eql(28)
+    done()
+  })
 })
 
 describe('Test the module with non Number values', () => {
@@ -66,13 +71,19 @@ describe('Test the module with non Number values', () => {
     done()
   })
 
-  it('Should return NaN (Not-A-Number) when called with a string that cannot be converted to a Number.', done => {
-    expect(abacus.add(1, 'lorem ipsum', 1)).eql(NaN)
+  it('Should throw a TypeError exception when called with a string that cannot be converted to a Number.', done => {
+    expect(() => {
+      abacus.add(1, 'lorem ipsum', 1)
+    }).to.throw(TypeError)
+    .to.have.property('message', `At least one of the arguments can't be parsed as a number.`)
     done()
   })
 
-  it('Should return NaN (Not-A-Number) when called with a boolean', done => {
-    expect(abacus.add(3, 3, true)).eql(NaN)
+  it('Should throw a TypeError exception when called with a boolean', done => {
+    expect(() => {
+      abacus.add(3, 3, true)
+    }).to.throw(TypeError).and
+    .to.have.property('message', `At least one of the arguments can't be parsed as a number.`)
     done()
   })
 })

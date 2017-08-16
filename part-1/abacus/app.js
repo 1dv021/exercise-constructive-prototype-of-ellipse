@@ -9,19 +9,22 @@
 
 const abacus = require('./src/abacus.js')
 
-let sum
+console.log(abacus.add(2, 5, 19)) // 26
 
-sum = abacus.add(2, 5, 19)
-console.log(sum) // 26
+console.log(abacus.add(2, '21', 19)) // 42
 
-sum = abacus.add(2, '21', 19)
-console.log(sum) // 42
+console.log(abacus.add(2.5, '5', '3,5', '1.2')) // 12.2, OBS! Både decimalkomma(,) och decimalpunkt(.) ska fungera
 
-sum = abacus.add(2.5, '5', '3,5', '1.2') // OBS! Både decimalkomma(,) och decimalpunkt(.) ska fungera
-console.log(sum) // 12.2
+try {
+  console.log(abacus.add(3, 8, 5, true))
+} catch (e) {
+  console.error(e.message)
+}
 
-sum = abacus.add(3, 8, 5, true)
-console.log(sum) // NaN
+try {
+  console.log(abacus.add(3, 8, 5, 'lorem ipsum'))
+} catch (e) {
+  console.error(e.message)
+}
 
-sum = abacus.add(3, 8, 5, 'lorem ipsum')
-console.log(sum) // NaN
+// console.log(abacus.addNestled([1, 2, 3], [[1, 2, 3, 4], 3, [1, 2, 3, 4, 5]], 2, 4, 6))

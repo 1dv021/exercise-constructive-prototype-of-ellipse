@@ -1,6 +1,7 @@
 # Reducerad array med objekt
 
 - C-nivå
+- [GitBook](https://coursepress.gitbooks.io/1dv021/content/ovningsuppgifter/del1/reducerad-array-med-objekt/)
 
 >__VIKTIGT!__ Innan du börjar arbeta med övningsuppgiften är det viktigt att du följer guiden [Att komma igång med en övningsuppgift](https://coursepress.gitbooks.io/1dv021/content/guider/att-komma-igang-med-en-ovningsuppgift/) för att lägga till övningsuppgiftens repo till ditt repo för övningsuppgifter.
 

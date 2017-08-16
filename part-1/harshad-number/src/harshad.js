@@ -15,7 +15,11 @@
 * @returns {boolean}
 */
 function isValid (number) {
-  // TODO: Write your code here! This is the first function to implement.
+  let strNumber = number.toString()
+  let numArray = strNumber.split('').map(Number)
+  let result = numArray.reduce((sum, value) => sum + value, 0)
+
+  return number % result === 0
 }
 
 /**
@@ -25,7 +29,11 @@ function isValid (number) {
 * @returns {number}
 */
 function getNext (number) {
-  // TODO: Write your code here! This is the second function to implement.
+  do {
+    number++
+  } while (!isValid(number))
+
+  return number
 }
 
 /**
@@ -36,7 +44,14 @@ function getNext (number) {
 * @returns {number[]}
 */
 function getSequence (count, start = 0) {
-  // TODO: Write your code here! This is the third function to implement.
+  let result = []
+
+  for (let i = 0; i < count; i++) {
+    start = getNext(start)
+    result.push(start)
+  }
+
+  return result
 }
 
 // Exports

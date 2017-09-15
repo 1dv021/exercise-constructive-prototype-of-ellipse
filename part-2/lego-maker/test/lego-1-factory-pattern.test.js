@@ -8,7 +8,7 @@
 
 'use strict'
 
-const legoMaker1 = require('./src/lego-1-factory-pattern')
+const legoMaker1 = require('../src/lego-1-factory-pattern')
 const expect = require('chai').expect
 
 describe('Part 1 - Using "Factory Pattern" (module: src/lego-1-factory-pattern.js)', () => {

@@ -8,7 +8,7 @@
 
 'use strict'
 
-const legoMaker5 = require('./src/lego-5-object-create')
+const legoMaker5 = require('../src/lego-5-object-create')
 const expect = require('chai').expect
 
 describe('Part 5 - Using "Factory Pattern with Object.create" (module: src/lego-5-object-create.js)', () => {

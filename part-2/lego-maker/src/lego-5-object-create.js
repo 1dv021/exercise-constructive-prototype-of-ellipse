@@ -58,19 +58,22 @@ const legoBrickPrototype = {
 let createLegoBrick = function (x = 2, y = 4, color = 'red') {
   return Object.create(legoBrickPrototype, {
     'x': {
-      enumerable: true,
       value: x,
-      writable: true
+      writable: true,
+      enumerable: true,
+      configurable: true
     },
     'y': {
-      enumerable: true,
       value: y,
-      writable: true
+      writable: true,
+      enumerable: true,
+      configurable: true
     },
     'color': {
-      enumerable: true,
       value: color,
-      writable: true
+      writable: true,
+      enumerable: true,
+      configurable: true
     }
   })
 }

@@ -42,7 +42,8 @@
   "scripts": {
     "debug": "node --nolazy --debug-brk=5858 app.js",
     "start": "node app.js",
-    "test": "mocha --recursive ./test && standard | snazzy"
+    "test": "mocha --recursive ./test && standard | snazzy",
+    "standard2": "standard | snazzy"
   },
   "standard": {
     "globals": [

@@ -75,7 +75,7 @@ describe('Ellipse - Using public properties (file: Ellipse.js)', () => {
 
       it(`{ a = 13.2, b = 42.1 } should return 'a: 13.2, b: 42.1, area: 1745.8, circumference: 196.0'`, done => {
         let ellipse = new Ellipse(13.2, 42.1)
-        expect(ellipse.toString()).to.equal('{ a: 13.2, b: 42.1, area: 1745.8, circumference: 196.0 }')
+        expect(ellipse.toString()).to.equal('a: 13.2, b: 42.1, area: 1745.8, circumference: 196.0')
         done()
       })
     })

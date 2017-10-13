@@ -1,4 +1,4 @@
-# Konstruktiv prototyp av ellips
+# Ny klassisk ellips
 
 - A-nivå
 - [GitBook](https://coursepress.gitbooks.io/1dv021/content/ovningsuppgifter/del2/ny-klassik-ellips/)

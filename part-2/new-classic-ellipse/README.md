@@ -23,7 +23,7 @@ Genom att använda designmönstret ska typer skapas som har egenskaper och metod
 
 Du ska skriva en klass av vilken objekt av typen `Ellipse` ska kunna instansieras, där arean och omkretsen ska kunna beräknas. I samband med att objektet skapas ska det vara möjligt att ange halva storaxelns längd, som betecknas `a`, och halva lillaxelns längd, som betecknas `b`.
 
-En ellips area kan bestämmas med $$A=\pi a b$$, `Math.PI * a * b`, och dess omkrets approximativt med $$O = \pi \sqrt{2 a^2 + 2 b^2}$$, `Math.PI * Math.sqrt(2 * a * a + 2 * b * b)`.
+En ellips area kan bestämmas med `Math.PI * a * b`, och dess omkrets approximativt med `Math.PI * Math.sqrt(2 * a * a + 2 * b * b)`.
 
 #### Egenskaper
 
@@ -42,7 +42,7 @@ Metoderna nedan ska vara gemensamma för samtliga objekt som instansieras av typ
 
 Du ska skriva en konstruktorfunktion som skapar ett objekt av typen `Circle` där arean och omkretsen ska kunna beräknas. I samband med att objektet skapas ska det vara möjligt att cirkelns radie, som betecknas `radius`. Se till att återanvända kod i så stor utsträckning som möjligt från typen `Ellipse` genom att använda arv.
 
-En ellips area kan bestämmas med $$A=\pi r^2$$, `Math.PI * radius * radius`, och dess omkrets med $$O = 2\pi r$$, `2 * Math.PI * radius`. _(Samma formler kan användas som för en ellips area och omkrets, eller?)_
+En ellips area kan bestämmas med `Math.PI * radius * radius`, och dess omkrets med `2 * Math.PI * radius`. _(Samma formler kan användas som för en ellips area och omkrets, eller?)_
 
 #### Egenskaper
 

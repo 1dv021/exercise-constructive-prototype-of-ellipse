@@ -13,7 +13,7 @@ const Ellipse = require('./Ellipse')
 /**
  * Creates a JavaScript Circle instance that represents an circle.
  *
- * @param {number} a - The circle's major-axis radius.
+ * @param {number} radius - The circle's radius.
  * @constructor
  */
 function Circle (radius) {
@@ -40,7 +40,7 @@ Circle.prototype.constructor = Circle
  * @returns {string} - A string that represents the current object.
  */
 Circle.prototype.toString = function () {
-  return `radius: ${this.a}, area: ${this.getArea().toFixed(1)}, circumference: ${this.getCircumference().toFixed(1)}`
+  return `radius: ${this.radius}, area: ${this.getArea().toFixed(1)}, circumference: ${this.getCircumference().toFixed(1)}`
 }
 
 // Exports.

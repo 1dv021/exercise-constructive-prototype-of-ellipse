@@ -19,6 +19,8 @@ function createRightTriangle (base) {
 
   for (let row = '#'; row.length <= base; row += '#') {
     triangle += `${row}\n`
+    // Alernative solution (easier?)
+    // triangle = triangle + row + '\n'
   }
 
   return triangle

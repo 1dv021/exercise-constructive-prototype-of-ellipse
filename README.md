@@ -1,21 +1,23 @@
 # Konstruktiv prototyp av ellips
 
 - A-nivå
-- [GitBook](https://coursepress.gitbooks.io/1dv021/content/ovningsuppgifter/del2/konstruktiv-prototyp-av-ellips/)
+- [GitBook](https://coursepress.gitbook.io/1dv021/ovningsuppgifter/del-2/a-niva/konstruktiv-prototyp-av-ellips)
+- [Lösningsförslag](https://github.com/1dv021/exercise-solution-proposals/tree/master/part-2/constructive-prototype-of-ellipse)
 
->__VIKTIGT!__ Innan du börjar arbeta med övningsuppgiften är det viktigt att du följer guiden [Att komma igång med en övningsuppgift](https://coursepress.gitbooks.io/1dv021/content/guider/att-komma-igang-med-en-ovningsuppgift/) för att lägga till övningsuppgiftens repo till ditt repo för övningsuppgifter.
 
-Hämta hem övningsuppgiftens repo, lägg till en .gitignore-fil och komplettera enligt anvisningarna.
+>__VIKTIGT!__ Innan du börjar arbeta med övningsuppgiften är det viktigt att du följer guiden [Att komma igång med en övningsuppgift](https://coursepress.gitbook.io/1dv021/guider/att-komma-igang-med-en-ovningsuppgift) för att lägga till övningsuppgiftens repo till ditt repo för övningsuppgifter.
 
 ## Uppgift
+
+Hämta hem övningsuppgiftens repo, lägg till en .gitignore-fil och komplettera enligt anvisningarna.
 
 I denna uppgift ska du komplettera med kod så att objekt, som representerar en ellips, skapas enligt _"Constructor/Prototype Pattern"_ . Genom att använda arv ska även objekt representarande en cirkel kunna skapas.
 
 Övningsuppgiften är uppdelad i tre filer och du ska skriva kod i som skapar objekt enligt nämndt designmönster. Genomför uppgiften genom att arbeta med filerna, och designmönster, i tur och ordning.
 
 1. `Ellips.js` - _"Constructor/Prototype Pattern"_
-1. `Circle.js` - _"Constructor/Prototype Pattern"_ som ärver från `Ellips`.
-1. `app.js` - instansierar och använder objekt av typerna `Ellips`och `Circle`.
+2. `Circle.js` - _"Constructor/Prototype Pattern"_ som ärver från `Ellips`.
+3. `app.js` - instansierar och använder objekt av typerna `Ellips`och `Circle`.
 
 Genom att använda designmönstret ska typer skapas som har egenskaper och metoder enigt nedan.
 
@@ -66,21 +68,16 @@ Vidare ska du presentera en textbeskrivning av objektet för värdena 63 och `18
 
 Cirkeln du skapar ska initial ha radien `6,7`, och en textbeskrivning av objektet ska presenteras. Även en textbeskrivning av cirklen ska presenteras för radien `3,8`.
 
-<figure>
-<pre>a: 13.8, b: 42.7, area: 1851.2, circumference: 199.4
+```
+a: 13.8, b: 42.7, area: 1851.2, circumference: 199.4
 a: 63, b: 18.4, area: 3641.7, circumference: 291.6
 a: 78.9, b: 68.4, area: 16954.4, circumference: 463.9
 radius: 6.7, area: 141.0, circumference: 42.1
-radius: 3.8, area: 45.4, circumference: 23.9</pre>
-<figcaption>Exempelutskrift som möter minimikraven.</figcaption>
-</figure>
+radius: 3.8, area: 45.4, circumference: 23.9
+```
 
 ## Tips
 
 __Ta del av föreläsningarna om olika sätt att skapa objekt, och återanvändning av kod, innan du fullständigt fullföljer denna uppgift!__
 
 Genom att köra testerna som kommer med övningsuppgiften kan du undersöka om koden du skrivit löst uppgiften (i alla fall enligt testet...).
-
-## Lösningsförslag
-
-- [https://github.com/1dv021/exercise-solution-proposals/tree/master/part-2/constructive-prototype-of-ellipse](https://github.com/1dv021/exercise-solution-proposals/tree/master/part-2/constructive-prototype-of-ellipse)

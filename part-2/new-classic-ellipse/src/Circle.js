@@ -25,7 +25,6 @@ class Circle extends Ellipse {
    */
   constructor (radius) {
     super(radius, radius)
-    this.radius = radius
   }
 
   get radius () {

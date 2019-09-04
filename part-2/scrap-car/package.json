@@ -31,10 +31,10 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "chai": "^3.5.0",
+    "chai": "^4.2.0",
     "jscs": "^3.0.7",
-    "jshint": "^2.9.3",
-    "mocha": "^3.0.2"
+    "jshint": "^2.10.2",
+    "mocha": "^6.2.0"
   },
   "directories": {
     "test": "test"

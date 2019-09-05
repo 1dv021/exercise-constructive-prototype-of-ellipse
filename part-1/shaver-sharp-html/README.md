@@ -5,7 +5,7 @@
 
 > __VIKTIGT!__ Innan du börjar arbeta med övningsuppgiften är det viktigt att du följer guiden [Att komma igång med en övningsuppgift](https://coursepress.gitbooks.io/1dv021/content/guider/att-komma-igang-med-en-ovningsuppgift/) för att lägga till övningsuppgiftens repo till ditt repo för övningsuppgifter.
 
-Hämta hem övningsuppgiftens repo och lägg till en .gitignore-fil. Denna uppgift ska resultera i en applikation som skapar HTML. Det är dock en enklare variant som bara klarar av att skapa starttag, sluttag och textinnehåll däremellan. Den klarar alltså inte av t.ex. tomma element eller attribut. Tanken är att du i slutändan ska kunna skicka in en array med objekt som instruerar applikationen att skapa HTML-kod i form av en textsträng. Du behöver inte ta hänsyn till så kallade "whitespaces", så som radbrytningar så HTML-strängen blir i ett stycke.
+Hämta hem övningsuppgiftens repo och lägg till en .gitignore-fil. Denna uppgift ska resultera i en applikation som skapar HTML. Det är dock en enklare variant som bara klarar av att skapa starttag, sluttagg och textinnehåll däremellan. Den klarar alltså inte av t.ex. tomma element eller attribut. Tanken är att du i slutändan ska kunna skicka in en array med objekt som instruerar applikationen att skapa HTML-kod i form av en textsträng. Du behöver inte ta hänsyn till så kallade "whitespaces", så som radbrytningar så HTML-strängen blir i ett stycke.
 
 Implementera funktionerna enligt anvisningarna.
 
@@ -34,7 +34,7 @@ let html = shaverSharp.createEndTag('h1')
 ### createElement
 
 Tar två textsträngar som parameter och returnerar en textsträng av ett helt element.
-Här bör man anropa de två tidigare funktionerna för att skapa slutresultatet
+Här bör man anropa de två tidigare funktionerna för att skapa slutresultatet.
 
 ```js
 let html = shaverSharp.createElement('h1', 'This is a headline')
@@ -47,8 +47,8 @@ Tar en array med objekt som parameter och returnerar en textsträng i form av HT
 
 ```js
 let arr = [
-{element: 'h1', innerHTML: 'This is a headline'},
-{elment: 'p', innerHTML: '...and this is a paragraph.'}
+  {tagName: 'h1', innerHTML: 'This is a headline'},
+  {tagName: 'p', innerHTML: '...and this is a paragraph.'}
 ]
 let html = shaverSharp.createElements(arr)
 // html contains '<h1>This is a headline</h1><p>...and this is a paragraph.</p>'

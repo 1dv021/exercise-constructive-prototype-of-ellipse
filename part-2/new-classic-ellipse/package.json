@@ -34,7 +34,7 @@
     "chai": "^4.2.0",
     "mocha": "^6.2.0",
     "snazzy": "^8.0.0",
-    "standard": "14.1.04.1.0"
+    "standard": "14.1.0"
   },
   "directories": {
     "test": "test"

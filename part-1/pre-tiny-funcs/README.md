@@ -20,8 +20,8 @@ Funktionen ska avrunda parameterns värde uppåt och returnera det avrundade hel
 
 Funktionen ska avrunda parameterns värde nedåt och returnera det avrundade heltalsvärdet.
 
-- Värdet `12.3` ska avrundas uppåt till `12`.
-- Värdet `19.8` ska avrundas uppåt till `19`.
+- Värdet `12.3` ska avrundas nedåt till `12`.
+- Värdet `19.8` ska avrundas nedåt till `19`.
 
 ### round
 

@@ -4,24 +4,12 @@
   "main": "app.js",
   "homepage": "http://coursepress.lnu.se/kurs/grundlaggande-programmering/",
   "contributors": [
-    {
-      "name": "John Häggerud",
-      "email": "john.haggerud@lnu.se"
-    },
-    {
-      "name": "Johan Leitet",
-      "email": "johan.leitet@lnu.se"
-    },
-    {
-      "name": "Jacob Lindehoff",
-      "email": "jacob.lindehoff@lnu.se"
-    },
-    {
-      "name": "Mats Loock",
-      "email": "mats.loock@lnu.se"
-    }
+    "John Häggerud <john.haggerud@lnu.se>",
+    "Johan Leitet <johan.leitet@lnu.se>",
+    "Jacob Lindehoff <jacob.lindehoff@lnu.se>",
+    "Mats Loock <mats.loock@lnu.se>"
   ],
-  "license": "CC-BY-4.0",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/1dv021/exercise-lego-maker.git"
@@ -31,30 +19,29 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "chai": "^4.2.0",
-    "mocha": "^6.2.0",
-    "snazzy": "^8.0.0",
-    "standard": "14.1.0"
+    "chai": "*",
+    "mocha": "*",
+    "snazzy": "*",
+    "standard": "*"
   },
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "debug": "node --nolazy --debug-brk=5858 app.js",
+    "all": "npm run lint && npm run test",
+    "lint": "standard | snazzy",
+    "lint:fix": "standard --fix",
     "start": "node app.js",
-    "test": "mocha --recursive ./test && standard | snazzy",
-    "standard2": "standard | snazzy"
+    "test": "mocha --recursive ./test"
   },
   "standard": {
-    "globals": [
-      "describe",
-      "context",
-      "before",
-      "beforeEach",
-      "after",
-      "afterEach",
-      "it",
-      "expect"
+    "env": {
+      "node": true,
+      "mocha": true,
+      "es6": true
+    },
+    "ignore": [
+      "**/test/"
     ]
   }
 }

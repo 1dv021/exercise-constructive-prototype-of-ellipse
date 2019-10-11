@@ -22,11 +22,11 @@
  * @returns {function} obj.toString - A function returning a string representing the object.
  * @returns {function} obj.render - A function rendering the object.
  */
-let createLegoBrick = function (x = 2, y = 4, color = 'red') {
+const createLegoBrick = function (x = 2, y = 4, color = 'red') {
   /**
    * Renders the object to the console.
    */
-  let render = function () {
+  const render = function () {
     console.log(this.toString())
   }
 
@@ -35,7 +35,7 @@ let createLegoBrick = function (x = 2, y = 4, color = 'red') {
    *
    * @returns {string} - A string representing the object.
    */
-  let toString = function () {
+  const toString = function () {
     let str = ''
 
     for (let y = 0; y < this.y; y++) {
@@ -52,6 +52,9 @@ let createLegoBrick = function (x = 2, y = 4, color = 'red') {
     }
 
     return str
+
+    // // ALTERNATIVE SOLUTION
+    // return `${' ®'.repeat(this.x).trim()}\n`.repeat(this.y).trim()
   }
 
   // Create an object and return it.

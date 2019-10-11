@@ -39,22 +39,7 @@ class LegoBrick {
    * @returns {string} - A string representing the object.
    */
   toString () {
-    let str = ''
-
-    for (let y = 0; y < this.y; y++) {
-      for (let x = 0; x < this.x; x++) {
-        str += '®'
-        if (x < this.x - 1) {
-          str += ' '
-        }
-      }
-
-      if (y < this.y - 1) {
-        str += '\n'
-      }
-    }
-
-    return str
+    return `${' ®'.repeat(this.x).trim()}\n`.repeat(this.y).trim()
   }
 }
 

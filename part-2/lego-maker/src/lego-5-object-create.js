@@ -23,22 +23,7 @@ const legoBrickPrototype = {
    * @returns {string} - A string representing the object.
    */
   toString: function () {
-    let str = ''
-
-    for (let y = 0; y < this.y; y++) {
-      for (let x = 0; x < this.x; x++) {
-        str += '®'
-        if (x < this.x - 1) {
-          str += ' '
-        }
-      }
-
-      if (y < this.y - 1) {
-        str += '\n'
-      }
-    }
-
-    return str
+    return `${' ®'.repeat(this.x).trim()}\n`.repeat(this.y).trim()
   }
 }
 
@@ -55,21 +40,21 @@ const legoBrickPrototype = {
  * @returns {function} obj.toString - A function returning a string representing the object.
  * @returns {function} obj.render - A function rendering the object.
  */
-let createLegoBrick = function (x = 2, y = 4, color = 'red') {
+const createLegoBrick = function (x = 2, y = 4, color = 'red') {
   return Object.create(legoBrickPrototype, {
-    'x': {
+    x: {
       value: x,
       writable: true,
       enumerable: true,
       configurable: true
     },
-    'y': {
+    y: {
       value: y,
       writable: true,
       enumerable: true,
       configurable: true
     },
-    'color': {
+    color: {
       value: color,
       writable: true,
       enumerable: true,

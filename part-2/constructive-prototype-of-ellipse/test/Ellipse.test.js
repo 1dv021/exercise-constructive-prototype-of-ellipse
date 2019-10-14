@@ -40,28 +40,29 @@ describe('Ellipse - Using public properties (file: Ellipse.js)', () => {
   })
 
   describe('Prototype', () => {
-    describe('getArea method', () => {
+    describe('area read-only property', () => {
       it('should be defined', done => {
-        expect(Ellipse.prototype).to.have.property('getArea').that.is.a('Function')
+        expect(Ellipse.prototype).to.have.property('area').that.is.a('Number')
         done()
       })
 
       it('{ a = 78.2, b = 7.4 } should return 1817.9768367793415', done => {
         let ellipse = new Ellipse(78.2, 7.4)
-        expect(ellipse.getArea()).to.equal(1817.9768367793415)
+        expect(ellipse.area).to.equal(1817.9768367793415)
         done()
       })
     })
 
-    describe('circumference method', () => {
+    describe('circumference read-only property', () => {
       it('should be defined', done => {
-        expect(Ellipse.prototype).to.have.property('getCircumference').that.is.a('Function')
+        expect(Ellipse.prototype.hasOwnProperty('circumference')).to.equal(true)
+        expect(Ellipse.prototype).to.have.property('circumference').that.is.a('Number')
         done()
       })
 
       it('{ a = 6, b = 9.7 } should return 50.67419139044478', done => {
         let ellipse = new Ellipse(6, 9.7)
-        expect(ellipse.getCircumference()).to.equal(50.67419139044478)
+        expect(ellipse.circumference).to.equal(50.67419139044478)
         done()
       })
     })

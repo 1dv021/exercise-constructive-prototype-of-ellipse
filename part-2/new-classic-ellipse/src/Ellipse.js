@@ -38,20 +38,20 @@ class Ellipse {
   }
 
   /**
-   * Returns the area of the current object.
+   * Gets the area of the current object.
    *
    * @returns {number} - A number.
    */
-  getArea () {
+  get area () {
     return Math.PI * Math.abs(this.a) * Math.abs(this.b)
   }
 
   /**
-   * Returns the circumference of the current object.
+   * Gets the circumference of the current object.
    *
    * @returns {number} - A number.
    */
-  getCircumference () {
+  get circumference () {
     return Math.PI * Math.sqrt(2 * this.a * this.a + 2 * this.b * this.b)
   }
 
@@ -61,7 +61,7 @@ class Ellipse {
    * @returns {string} - A string that represents the current object.
    */
   toString () {
-    return `a: ${this.a}, b: ${this.b}, area: ${this.getArea().toFixed(1)}, circumference: ${this.getCircumference().toFixed(1)}`
+    return `a: ${this.a}, b: ${this.b}, area: ${this.area.toFixed(1)}, circumference: ${this.circumference.toFixed(1)}`
   }
 }
 

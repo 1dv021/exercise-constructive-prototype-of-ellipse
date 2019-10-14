@@ -40,7 +40,7 @@ Circle.prototype.constructor = Circle
  * @returns {string} - A string that represents the current object.
  */
 Circle.prototype.toString = function () {
-  return `radius: ${this.radius}, area: ${this.getArea().toFixed(1)}, circumference: ${this.getCircumference().toFixed(1)}`
+  return `radius: ${this.radius}, area: ${this.area.toFixed(1)}, circumference: ${this.circumference.toFixed(1)}`
 }
 
 // Exports.

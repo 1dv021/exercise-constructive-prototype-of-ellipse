@@ -36,31 +36,57 @@ describe('Circle - Using public properties (file: Circle.js)', () => {
   })
 
   describe('Prototype', () => {
-    describe('getArea method', () => {
+    describe('area property', () => {
       it('should be defined', done => {
-        expect(Circle.prototype).to.have.property('getArea').that.is.a('Function')
+        expect(Circle.prototype).to.have.property('area').that.is.a('Number')
         done()
       })
 
       it('{ radius = 7.8 } should return 191.13449704440302', done => {
         let circle = new Circle(7.8)
-        expect(circle.getArea()).to.equal(191.13449704440302)
+        expect(circle.area).to.equal(191.13449704440302)
         done()
       })
     })
 
-    describe('getCircumference method', () => {
+    // describe('getArea method', () => {
+    //   it('should be defined', done => {
+    //     expect(Circle.prototype).to.have.property('getArea').that.is.a('Function')
+    //     done()
+    //   })
+
+    //   it('{ radius = 7.8 } should return 191.13449704440302', done => {
+    //     let circle = new Circle(7.8)
+    //     expect(circle.getArea()).to.equal(191.13449704440302)
+    //     done()
+    //   })
+    // })
+
+    describe('circumference property', () => {
       it('should be defined', done => {
-        expect(Circle.prototype).to.have.property('getCircumference').that.is.a('Function')
+        expect(Circle.prototype).to.have.property('circumference').that.is.a('Number')
         done()
       })
 
       it('{ a = 6, b = 9.7 } should return 60.94689747964198', done => {
         let circle = new Circle(9.7)
-        expect(circle.getCircumference()).to.equal(60.94689747964198)
+        expect(circle.circumference).to.equal(60.94689747964198)
         done()
       })
     })
+
+    // describe('getCircumference method', () => {
+    //   it('should be defined', done => {
+    //     expect(Circle.prototype).to.have.property('getCircumference').that.is.a('Function')
+    //     done()
+    //   })
+
+    //   it('{ a = 6, b = 9.7 } should return 60.94689747964198', done => {
+    //     let circle = new Circle(9.7)
+    //     expect(circle.getCircumference()).to.equal(60.94689747964198)
+    //     done()
+    //   })
+    // })
 
     describe('toString method', () => {
       it('should be defined as an own property', done => {
